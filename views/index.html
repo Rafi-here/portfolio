@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../style.css" />
+  <title>Gallery Project</title>
+  <style>
+    /* Grid khusus gallery */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    /* Override efek slider untuk halaman ini saja */
+    .gallery-grid .card {
+      filter: none;
+      transform: none;
+      margin: 0;
+      height: auto;
+    }
+
+    .gallery-grid .card img {
+      height: auto;
+      object-fit: cover;
+    }
+
+    /* Tombol kembali */
+    .back-button {
+      display: block;
+      width: fit-content;
+      margin: 30px auto;
+      padding: 10px 20px;
+      background: linear-gradient(135deg, #00c9ff, #92fe9d);
+      color: #000;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .back-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="slider-container">
+    <h1 class="h1card">Gallery Project</h1>
+    <div class="gallery-grid">
+      <div class="card"><img src="../img/bizlink1.png" alt="Project 1" /></div>
+      <div class="card"><img src="../img/bizlink2.png" alt="Project 2" /></div>
+      <div class="card"><img src="../img/front-end-vue.png" alt="Project 3" /></div>
+      <div class="card"><img src="../img/crud_laundry.png" alt="Project 4" /></div>
+    </div>
+
+    <a href="../index.html" class="back-button">Kembali ke Halaman Utama</a>
+  </div>
+</body>
+</html>
