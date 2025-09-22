@@ -359,7 +359,6 @@ body::before {
   height: full;
   margin-top: 50px;
   margin-bottom: 20px;
-  background: #222;
   color: white;
   border-radius: 15px;
   display: flex;
@@ -576,6 +575,83 @@ button:active {
 .project-link:hover {
     transform: scale(1.1) rotate(15deg);
     box-shadow: 0 4px 15px rgba(255, 77, 77, 0.4);
+}
+
+/* === Certificate Showcase Section === */
+.certificate-showcase {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.certificate-showcase h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.certificate-item {
+  background: rgba(30, 30, 30, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.15);
+}
+
+.certificate-preview img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.certificate-info {
+  padding: 20px;
+}
+
+.certificate-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.certificate-subtitle {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.certificate-link {
+  display: inline-block;
+  font-size: 1.2rem;
+  background: linear-gradient(135deg, #ff4d4d, #f9cb28);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: color 0.3s ease;
+}
+
+.certificate-link:hover {
+  color: #0056b3;
+}
+
+.certificate-link i {
+  color: #1a1a1a;
 }
 
 
