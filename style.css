@@ -87,7 +87,7 @@ body::before {
   min-height: 600px;
   background: 
     linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
-    url('img/bg.jpeg') no-repeat center center/cover;
+    url('img/backgr.png') no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -587,7 +587,7 @@ button:active {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 40px;
-  color: #333;
+  color: #ffffffff;
 }
 
 .certificate-grid {
@@ -653,6 +653,29 @@ button:active {
 .certificate-link i {
   color: #1a1a1a;
 }
+
+ .btn-gradient {
+    display: inline-block;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+  background: linear-gradient(135deg, #ff4d4d, #f9cb28);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn-gradient:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+  }
+
+  .button-wrapper {
+    text-align: center;
+    margin: 40px 0;
+  }
 
 
   .footer{
